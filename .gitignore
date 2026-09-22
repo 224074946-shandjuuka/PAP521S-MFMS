@@ -1,0 +1,17 @@
+# Compiled executables
+*.exe
+*.out
+*.o
+a.out
+
+# Editor
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup
+*~
+*.bak
