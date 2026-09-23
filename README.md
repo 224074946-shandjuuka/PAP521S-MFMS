@@ -9,6 +9,7 @@
 
 | # | Name | Student Number | Role |
 |---|------|----------------|------|
+
 | 1 | Kletus Kapusa Kapusa | 224012193 | Employee Management |
 | 2 | Bertha Preslyn Witbeen  | 226003159 | Budget Management |
 | 3 | Merjan Eliphas | 225082462  | Supplier Management |
@@ -32,4 +33,6 @@ A menu-driven C application that manages municipal employees, budgets, suppliers
 ## Compilation
 
 ```bash
+
 gcc main.c employees.c budget.c suppliers.c assets.c reports.c -o mfms
+
