@@ -11,7 +11,7 @@
 |---|------|----------------|------|
 | 1 | Laimi Shandjuka | 224074946 | Integration & Main Menu |
 | 2 | Kletus Kapusa Kapusa | 224012193 | Employee Management |
-| 3 | *(to be confirmed)* | — | Budget Management |
+| 3 | Merjan Eliphas | 225082462 | Budget Management |
 | 4 | Bertha Preslyn Witbeen | 226003159 | Supplier Management |
 | 5 | Israel Vilho | 225121530 | Asset Management |
 | 6 | *(to be confirmed)* | — | Reports |
