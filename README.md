@@ -9,12 +9,12 @@
 
 | # | Name | Student Number | Role |
 |---|------|----------------|------|
-| 1 | Laimi Shandjuka | 224074946 | Integration & Main Menu |
-| 2 | Kletus Kapusa Kapusa | 224012193 | Employee Management |
-| 3 | *(to be confirmed)* | — | Budget Management |
-| 4 | Bertha Preslyn Witbeen | 226003159 | Supplier Management |
-| 5 | Israel Vilho | 225121530 | Asset Management |
-| 6 | *(to be confirmed)* | — | Reports |
+| 1 | Kletus Kapusa Kapusa | 224012193 | Employee Management |
+| 2 | Bertha Preslyn Witbeen  | 226003159 | Budget Management |
+| 3 | Merjan Eliphas | 225082462  | Supplier Management |
+| 4 | Israel Vilho | 225121530 | Asset Management | 
+| 5 | *(to be confirmed)* | — | Reports |
+| 6 | Laimi Shandjuka | 224074946 | Integration & Main Menu |
 | 7 | *(to be confirmed)* | — | Testing & Documentation |
 
 ## Project Description
