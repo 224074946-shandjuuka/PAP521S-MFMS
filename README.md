@@ -14,7 +14,7 @@
 | 3 | Merjan Eliphas | 225082462  | Supplier Management |
 | 4 | Israel Vilho | 225121530 | Asset Management | 
 | 5 | Lamek Shinyala | 225149419 | Reports |
-| 6 | Laimi Shandjuka | 224074946 | Integration & Main Menu |
+| 6 | Laimi Shandjuuka | 224074946 | Integration & Main Menu |
 | 7 | Esli Ndamanomhata | 221076336 | Testing & Documentation |
 
 ## Project Description
