@@ -118,6 +118,7 @@ void assetReport(void) {
     char names[100][50];
     double values[100];
     double total = 0.0;
+    double highest = 0.0; // <--- NEW LINE
 
     for (int i = 0; i < n; i++) {
         printf("Asset %d name  : ", i + 1);
@@ -125,6 +126,11 @@ void assetReport(void) {
         printf("Asset %d value : ", i + 1);
         scanf("%lf", &values[i]);
         total += values[i];
+        
+        // <--- NEW LINES TO FIND HIGHEST
+        if (i == 0 || values[i] > highest) {
+            highest = values[i];
+        }
     }
 
     printf("\n--- Asset Summary ---\n");
@@ -133,6 +139,7 @@ void assetReport(void) {
     }
     printf("Total value     : %.2f\n", total);
     printf("Average value   : %.2f\n", total / n);
+    printf("Highest value   : %.2f\n", highest); // <--- NEW LINE
 }
 
 void reportsMenu(void) {
