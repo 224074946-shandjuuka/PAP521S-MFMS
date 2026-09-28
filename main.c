@@ -6,20 +6,32 @@
 ====================================================*/
 
 #include <stdio.h>
-#include "reports.h"
 
 void employeeMenu();
 void budgetMenu();
 void supplierMenu();
 void assetMenu();
-void reportMenu();
-        
+void reportsMenu();
+
 int main() {
     int choice = 0;
 
-    while (choice != 6) {
+    printf("Welcome to the Municipal Financial Management System\n");
 
-        scanf("%d", &choice);  
+    while (choice != 6) {
+        printf("\n========================================\n");
+        printf("  MUNICIPAL FINANCIAL MANAGEMENT SYSTEM\n");
+        printf("========================================\n");
+        printf("  1. Employee Management\n");
+        printf("  2. Budget Management\n");
+        printf("  3. Supplier Management\n");
+        printf("  4. Asset Management\n");
+        printf("  5. Reports\n");
+        printf("  6. Exit\n");
+        printf("----------------------------------------\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
         switch (choice) {
             case 1: employeeMenu(); break;
             case 2: budgetMenu();   break;
