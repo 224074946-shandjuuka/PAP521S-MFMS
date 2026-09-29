@@ -1,0 +1,71 @@
+# MUNICIPAL FINANCIAL MANAGEMENT SYSTEM (MFMS)
+## Short Technical Report
+
+**Course:** PAP521S - Programming in Practice  
+**Project:** Project A - Foundation System  
+**Repository:** 224074946-shandjuuka/PAP521S-MFMS  
+
+---
+
+### 1. Introduction
+The Municipal Financial Management System (MFMS) is a C-based foundation console application designed to streamline core operational and administrative tasks within a municipal council environment. Developed as part of the PAP521S course, this system serves as a functional foundation to manage employee payroll metrics, departmental budgets, supplier records, and municipal physical assets.
+
+---
+
+### 2. Problem Description
+Local municipal administrations frequently struggle with fragmented data management across departments. Without a centralized digital platform, tracking employee compensation, monitoring budget expenditures against allocations, maintaining supplier contact databases, and registering physical assets lead to administrative delays, data redundancy, and financial oversights. MFMS addresses this problem by consolidating these foundational municipal functions into a structured, menu-driven command-line system.
+
+---
+
+### 3. System Objectives
+- **Centralized Data Management:** Provide an interactive menu interface to navigate between core municipal modules.
+- **Input Validation & Safety:** Ensure robust handling of user input to prevent system crashes from invalid data types, empty strings, or negative financial values.
+- **Data Processing & Analytics:** Perform accurate computations for net salary allowances, remaining departmental budgets, budget overrun flags, and summary reports.
+- **Modular Program Architecture:** Implement clear module separation using header (`.h`) and source (`.c`) files with structured functions, standard C libraries, and proper variable scoping.
+
+---
+
+### 4. System Features
+1. **Main Menu Navigation:** Interactive terminal-based choice system allowing seamless navigation across all subsystems and graceful termination.
+2. **Employee Management:** Supports adding, listing, searching, and calculating salary components (basic salary, housing allowance, transport allowance) for municipal personnel.
+3. **Budget Management:** Tracks departmental budget allocations against actual expenditure, calculates net remaining balances, and flags departments exceeding their budget.
+4. **Supplier Management:** Registers vendor IDs, names, emails, telephone numbers, and towns, featuring search and display functionalities.
+5. **Asset Management:** Maintains an inventory register for municipal assets (vehicles, computers, buildings, equipment) including asset IDs, purchase values, assigned departments, and physical conditions.
+6. **Reporting Subsystem:** Generates comprehensive summary metrics including total headcount, average/highest/lowest salaries, overall budget status, and registered asset counts.
+
+---
+
+### 5. Program Design
+The system follows a modular software design in standard ANSI C (C99), dividing code into specialized modules:
+
+- `main.c`: Controls the application lifecycle and primary execution loop.
+- `employees.c / employees.h`: Encapsulates employee data structures, salary formulas, and search routines.
+- `budget.c / budget.h`: Implements budget tracking, expenditure comparison, and status evaluation.
+- `suppliers.c / suppliers.h`: Handles vendor directory records and search utilities using standard string processing.
+- `assets.c / assets.h`: Manages asset registration and condition tracking.
+- `reports.c / reports.h`: Aggregates records across modules to render analytical summary reports.
+
+**Key Programming Concepts Used:**
+- **Data Structures:** Custom structures (`struct`) and arrays for record storage.
+- **Control Structures:** `switch` statements for menus, `while`/`for` loops for iteration and menu persistence.
+- **String Handling:** Standard library routines (`strlen`, `strcmp`, `strcpy`) for string manipulation and comparisons.
+- **Functions & Parameters:** Modular functions utilizing pass-by-value and reference mechanics.
+
+---
+
+### 6. Challenges Encountered
+1. **Input Buffer Overflow & Trailing Newlines:** Residual newline characters (`\n`) left in the standard input stream when mixing `scanf` for numbers and `fgets` for text caused menu skipping and string read errors.
+2. **String Matching & Search Sensitivities:** Exact string searches failed when users entered varying case casing or unexpected trailing spaces.
+3. **Negative Financial Inputs:** Users entering negative amounts for salaries or budget allocations corrupted numerical reporting logic.
+
+---
+
+### 7. Solutions Implemented
+1. **Input Stream Clearing:** Integrated helper functions to consume residual characters from standard input (`stdin`) before executing string reading operations, ensuring clean user prompts.
+2. **String Sanitization:** Utilized `strlen()` and index inspection to automatically strip trailing newline characters from strings captured via `fgets()`.
+3. **Validation Loops:** Enforced `do-while` input validation loops around numerical inputs to verify that values like salary, budget allocation, and expenditure remain greater than or equal to zero before storing them.
+
+---
+
+### 8. Conclusion
+Project A successfully delivers a stable, modular, and fully functional Municipal Financial Management System in C. The application meets all foundational objectives by implementing robust input validation, clear menu interfaces, accurate financial computations, and structured data tracking. This foundation prepares the team to refactor, expand, and extend system capabilities in Project B.
