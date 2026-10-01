@@ -1,0 +1,41 @@
+Municipal Financial Management System (MFMS)
+Project A — Technical Report | PAP521S: Programming in Practice
+
+Section 1: Introduction
+The Municipal Financial Management System (MFMS) is a menu-driven C application developed by a team of seven students for PAP521S Programming in Practice. The system manages employee records, departmental budgets, suppliers, and municipal assets, and produces summary reports.
+
+Section 2: Problem Description
+Municipalities handle large amounts of financial and personnel data. Manual record-keeping is slow, error-prone, and hard to search. A software solution is needed to organize this information efficiently.
+
+Section 3: System Objectives
+- Provide a clear menu-driven interface
+- Allow adding, displaying, and searching employee records
+- Track departmental budgets and expenditure
+- Manage supplier information
+- Maintain an asset register
+- Generate summary reports
+
+Section 4: System Features
+- Employee Management: add, display, search
+- Budget Management: allocate budgets, record expenditure, flag over-budget departments
+- Supplier Management: add, display, search by name
+- Asset Management: add, display, search by ID
+- Reports: employee, budget, supplier, and asset summaries
+
+Section 5: Program Design
+The system uses a modular design. main.c provides the menu and calls each module's function. Each module has its own .c and .h files. Data is stored using parallel arrays. Concepts used: arrays, loops, if/else, switch, functions, strings, input/output.
+
+Section 6: Challenges Encountered
+- Handling input with scanf in C
+- Coordinating Git branches across 7 developers
+- Resolving a merge conflict caused by an accidental edit to main.c
+- Working around campus network restrictions (SSH port 22 blocked)
+
+Section 7: Solutions Implemented
+- Used feature branches and pull requests for every change
+- Protected the main branch to require reviews
+- Restored main.c from Git history when it was accidentally modified
+- Configured SSH to use port 443 as a workaround
+
+Section 8: Conclusion
+The MFMS successfully manages municipal employee, budget, supplier, and asset data through an integrated menu system. The project demonstrates the effective use of C programming concepts and teamwork with Git and GitHub. It provides a solid foundation for Project B extensions.
